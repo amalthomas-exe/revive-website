@@ -227,7 +227,7 @@
                     </div>
 
                     <div class="buttons-area">
-                        <input type="radio" name="marital" id="single" value="single" checked="checked">
+                        <input type="radio" name="marital" id="single" value="single" >
                         <label for="single">Single</label>
 
                         <input type="radio" name="marital" value="married" id="married">
@@ -245,18 +245,298 @@
                         <input type="radio" name="marital" value="annulled" id="annulled">
                         <label for="annulled">Marriage Annulled</label>
                     </div>
-                    <div id="marital-accompanying">
+                    <div id="marital-accompanying" class="hidden">
                         <div class="section-title">
                             Your spouse or common-law partner come with you to Canada?
                         </div>
                         <div class="buttons-area">
-                            <input type="radio" name="marital-accompanying" id="marital-accompanying-yes" value="yes"
-                                checked="checked">
+                            <input type="radio" name="marital-accompanying" id="marital-accompanying-yes" value="marital-accompanying-yes"
+                                >
                             <label for="marital-accompanying-yes">Yes</label>
 
-                            <input type="radio" name="marital-accompanying" value="no" id="marital-accompanying-no">
+                            <input type="radio" name="marital-accompanying" value="marital-accompanying-no" id="marital-accompanying-no">
                             <label for="marital-accompanying-no">No</label>
                         </div>
+                    </div>
+                    <div id="partner-details"  class="hidden">
+                        <div id="partner-edu-level">
+                            <div class="section-title">
+                                Spouse’s or common-law partner’s level of education
+                            </div>
+                            <div class="buttons-area">
+                                <input type="radio" name="partner-edu-level" id="partner-edu-level-none" value="partner-edu-level-none"
+                                    >
+                                <label for="partner-edu-level-none">None</label>
+    
+                                <input type="radio" name="partner-edu-level" value="partner-edu-level-high-school" id="partner-edu-level-high-school">
+                                <label for="partner-edu-level-high-school">High School (Or Less)</label>
+    
+                                <input type="radio" name="partner-edu-level" value="partner-edu-level-diploma" id="partner-edu-level-diploma">
+                                <label for="partner-edu-level-diploma">Diploma</label>
+    
+                                <input type="radio" name="partner-edu-level" value="partner-edu-level-masters" id="partner-edu-level-masters">
+                                <label for="partner-edu-level-masters">Masters</label>
+    
+                                <input type="radio" name="partner-edu-level" value="partner-edu-level-phd" id="partner-edu-level-phd">
+                                <label for="partner-edu-level-phd">Phd</label>
+                            </div>
+                        </div>
+                        <div id="partner-work-experience">
+                            <div class="section-title">
+                                Spouse’s or common-law partner’s work experience
+                            </div>
+                            <div class="buttons-area">
+                                <input type="radio" name="partner-work-exp" id="partner-work-less-than-one" value="partner-work-less-than-one"
+                                    >
+                                <label for="partner-work-less-than-one">Less than a year</label>
+    
+                                <input type="radio" name="partner-work-exp" value="partner-work-one-year" id="partner-work-one-year">
+                                <label for="partner-work-one-year">1 year</label>
+    
+                                <input type="radio" name="partner-work-exp" value="partner-work-two-year" id="partner-work-two-year">
+                                <label for="partner-work-two-year">2 years</label>
+    
+                                <input type="radio" name="partner-work-exp" value="partner-work-three-year" id="partner-work-three-year">
+                                <label for="partner-work-three-year">3 years</label>
+    
+                                <input type="radio" name="partner-work-exp" value="partner-work-four-year" id="partner-work-four-year">
+                                <label for="partner-work-four-year">4 years</label>
+
+                                <input type="radio" name="partner-work-exp" value="partner-work-five-year" id="partner-work-five-year">
+                                <label for="partner-work-five-year">5 years or more</label>
+                            </div>
+                        </div>
+                        <div id="partner-eng-fre">
+                            <div class="section-title">
+                                Spouse's or Common-law partner's English/French Language Skills (CLB Level)
+                            </div>
+                            <div class="buttons-area">
+                                <input type="radio" name="partner-eng-fre" id="partner-eng-fre-none" value="partner-eng-fre-none"
+                                    >
+                                <label for="partner-eng-fre-none">None</label>
+                                <input type="radio" name="partner-eng-fre" id="partner-eng-fre-basic" value="partner-eng-fre-basic">
+                                <label for="partner-eng-fre-basic">Basic</label>
+                                <input type="radio" name="partner-eng-fre" id="partner-eng-fre-basic-plus" value="partner-eng-fre-basic-plus">
+                                <label for="partner-eng-fre-basic-plus">Basic+</label>
+                                <input type="radio" name="partner-eng-fre" id="partner-eng-fre-okay" value="partner-eng-fre-okay">
+                                <label for="partner-eng-fre-okay">Okay</label>
+                                <input type="radio" name="partner-eng-fre" id="partner-eng-fre-good" value="partner-eng-fre-good">
+                                <label for="partner-eng-fre-good">Good</label>
+                                <input type="radio" name="partner-eng-fre" id="partner-eng-fre-better" value="partner-eng-fre-better">
+                                <label for="partner-eng-fre-better">Better</label>
+                                <input type="radio" name="partner-eng-fre" id="partner-eng-fre-best" value="partner-eng-fre-best">
+                                <label for="partner-eng-fre-best">Best</label>
+
+                            </div>
+                        </div>
+
+                        <div id="partner-canadian-work-exp">
+                            <div class="section-title">
+                                Spouse’s or common-law partner’s Canadian work experience
+                            </div>
+                            <div class="buttons-area">
+                                <input type="radio" name="partner-canadian-work-exp" id="partner-canadian-work-less-than-one" value="partner-canadian-work-less-than-one"
+                                    >
+                                <label for="partner-canadian-work-less-than-one">Less than a year</label>
+    
+                                <input type="radio" name="partner-canadian-work-exp" value="partner-canadian-work-one-year" id="partner-canadian-work-one-year">
+                                <label for="partner-canadian-work-one-year">1 year</label>
+    
+                                <input type="radio" name="partner-canadian-work-exp" value="partner-canadian-work-two-year" id="partner-canadian-work-two-year">
+                                <label for="partner-canadian-work-two-year">2 years</label>
+    
+                                <input type="radio" name="partner-canadian-work-exp" value="partner-canadian-work-three-year" id="partner-canadian-work-three-year">
+                                <label for="partner-canadian-work-three-year">3 years</label>
+    
+                                <input type="radio" name="partner-canadian-work-exp" value="partner-canadian-work-four-year" id="partner-canadian-work-four-year">
+                                <label for="partner-canadian-work-four-year">4 years</label>
+
+                                <input type="radio" name="partner-canadian-work-exp" value="partner-canadian-work-five-year" id="partner-canadian-work-five-year">
+                                <label for="partner-canadian-work-five-year">5 years or more</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="age">
+                    <div class="section-title">Your age</div>
+                    <input type="text" name="age" id="age-input" placeholder="Enter age">
+                </div>
+                <div id="edu-level">
+                    <div class="section-title">
+                        Your education level
+                    </div>
+                    <div class="buttons-area">
+                        <input type="radio" name="edu-level" id="edu-level-none" value="edu-level-none"
+                            >
+                        <label for="edu-level-none">None</label>
+
+                        <input type="radio" name="edu-level" value="edu-level-high-school" id="edu-level-high-school">
+                        <label for="edu-level-high-school">High School (Or Less)</label>
+
+                        <input type="radio" name="edu-level" value="edu-level-diploma" id="edu-level-diploma">
+                        <label for="edu-level-diploma">Diploma</label>
+
+                        <input type="radio" name="edu-level" value="edu-level-masters" id="edu-level-masters">
+                        <label for="edu-level-masters">Masters</label>
+
+                        <input type="radio" name="edu-level" value="edu-level-phd" id="edu-level-phd">
+                        <label for="edu-level-phd">Phd</label>
+                    </div>
+                </div>
+                <div id="eng-fre">
+                    <div class="section-title">
+                        Your English/French Language Skills (CLB Level)
+                    </div>
+                    <div class="buttons-area">
+                        <input type="radio" name="eng-fre" id="eng-fre-none" value="eng-fre-none"
+                            >
+                        <label for="eng-fre-none">None</label>
+                        <input type="radio" name="eng-fre" id="eng-fre-basic" value="eng-fre-basic">
+                        <label for="eng-fre-basic">Basic</label>
+                        <input type="radio" name="eng-fre" id="eng-fre-basic-plus" value="eng-fre-basic-plus">
+                        <label for="eng-fre-basic-plus">Basic+</label>
+                        <input type="radio" name="eng-fre" id="eng-fre-okay" value="eng-fre-okay">
+                        <label for="eng-fre-okay">Okay</label>
+                        <input type="radio" name="eng-fre" id="eng-fre-good" value="eng-fre-good">
+                        <label for="eng-fre-good">Good</label>
+                        <input type="radio" name="eng-fre" id="eng-fre-better" value="eng-fre-better">
+                        <label for="eng-fre-better">Better</label>
+                        <input type="radio" name="eng-fre" id="eng-fre-best" value="eng-fre-best">
+                        <label for="eng-fre-best">Best</label>
+                    </div>
+                </div>
+                <div id="canada-study">
+                    <div class="section-title">Studied in Canada</div>
+                    <div class="buttons-area">
+                        <input type="radio" name="canada-study" id="canada-study-no" value="canada-study-no"
+                            >
+                        <label for="canada-study-no">No</label>
+                        <input type="radio" name="canada-study" id="canada-study-high" value="canada-study-high">
+                        <label for="canada-study-high">High School or less</label>
+                        <input type="radio" name="canada-study" id="canada-study-diploma" value="canada-study-diploma">
+                        <label for="canada-study-diploma">Diploma</label>
+                        <input type="radio" name="canada-study" id="canada-study-diploma-more" value="canada-study-diploma-more">
+                        <label for="canada-study-diploma-more">Diploma or more</label>
+                    </div>
+                </div>
+                <div id="work-exp">
+                    <div class="section-title">
+                        Your work experience
+                    </div>
+                    <div class="buttons-area">
+                        <input type="radio" name="work-exp" id="work-less-than-one" value="work-less-than-one"
+                            >
+                        <label for="work-less-than-one">Less than a year</label>
+
+                        <input type="radio" name="work-exp" value="work-one-year" id="work-one-year">
+                        <label for="work-one-year">1 year</label>
+
+                        <input type="radio" name="work-exp" value="work-two-year" id="work-two-year">
+                        <label for="work-two-year">2 years</label>
+
+                        <input type="radio" name="work-exp" value="work-three-year" id="work-three-year">
+                        <label for="work-three-year">3 years</label>
+
+                        <input type="radio" name="work-exp" value="work-four-year" id="work-four-year">
+                        <label for="work-four-year">4 years</label>
+
+                        <input type="radio" name="work-exp" value="work-five-year" id="work-five-year">
+                        <label for="work-five-year">5 years or more</label>
+                    </div>
+                </div>
+                <div id="canadian-work-exp">
+                    <div class="section-title">
+                        Your Canadian work experience
+                    </div>
+                    <div class="buttons-area">
+                        <input type="radio" name="canadian-work-exp" id="canadian-work-less-than-one" value="canadian-work-less-than-one"
+                            >
+                        <label for="canadian-work-less-than-one">Less than a year</label>
+
+                        <input type="radio" name="canadian-work-exp" value="canadian-work-one-year" id="canadian-work-one-year">
+                        <label for="canadian-work-one-year">1 year</label>
+
+                        <input type="radio" name="canadian-work-exp" value="canadian-work-two-year" id="canadian-work-two-year">
+                        <label for="canadian-work-two-year">2 years</label>
+
+                        <input type="radio" name="canadian-work-exp" value="canadian-work-three-year" id="canadian-work-three-year">
+                        <label for="canadian-work-three-year">3 years</label>
+
+                        <input type="radio" name="canadian-work-exp" value="canadian-work-four-year" id="canadian-work-four-year">
+                        <label for="canadian-work-four-year">4 years</label>
+
+                        <input type="radio" name="canadian-work-exp" value="canadian-work-five-year" id="canadian-work-five-year">
+                        <label for="canadian-work-five-year">5 years or more</label>
+                    </div>
+                </div>
+                <div id="canada-empl-offer">
+                    <div class="section-title">
+                        Do you have a job offer in Canada?
+                    </div>
+                    <div class="buttons-area">
+                        <input type="radio" name="canada-empl-offer" id="canada-empl-offer-no" value="canada-empl-offer-no"
+                            >
+                        <label for="canada-empl-offer-no">No</label>
+
+                        <input type="radio" name="canada-empl-offer" value="canada-empl-offer-yes" id="canada-empl-offer-yes">
+                        <label for="canada-empl-offer-yes">Yes</label>
+                    </div>
+                </div>
+                <div id="job-type"  class="hidden">
+                    <div class="section-title">
+                        Your job type
+                    </div>
+                    <div class="buttons-area">
+                        <input type="radio" name="job-type" id="job-type-above-manager" value="job-type-above-manager">
+                        <label for="job-type-above-manager">Above Manager level</label>
+
+                        <input type="radio" name="job-type" value="job-type-manager" id="job-type-manager">
+                        <label for="job-type-manager">Management Job</label>
+
+                        <input type="radio" name="job-type" value="job-type-tier-high" id="job-type-tier-high">
+                        <label for="job-type-tier-high">Doctors, Dentists, Architects,etc</label>
+
+                        <input type="radio" name="job-type" value="job-type-tier-low" id="job-type-tier-low">
+                        <label for="job-type-tier-low">Chefs, Plumbers, Electricians, etc</label>
+                    </div>
+                </div>
+                <div id="siblings-in-canada">
+                    <div class="section-title">
+                        Do you have any siblings in Canada?
+                    </div>
+                    <div class="buttons-area">
+                        <input type="radio" name="siblings-in-canada" id="siblings-in-canada-no" value="siblings-in-canada-no"
+                            >
+                        <label for="siblings-in-canada-no">No</label>
+
+                        <input type="radio" name="siblings-in-canada" value="siblings-in-canada-yes" id="siblings-in-canada-yes">
+                        <label for="siblings-in-canada-yes">Yes</label>
+                    </div>
+                </div>
+                <div id="bilingual">
+                    <div class="section-title">
+                        Are you bilingual?
+                    </div>
+                    <div class="buttons-area">
+                        <input type="radio" name="bilingual" id="bilingual-no" value="bilingual-no"
+                            >
+                        <label for="bilingual-no">No</label>
+
+                        <input type="radio" name="bilingual" value="bilingual-yes" id="bilingual-yes">
+                        <label for="bilingual-yes">Yes</label>
+                    </div>
+                </div>
+                <div id="pnp-nomination">
+                    <div class="section-title">
+                        Do you have a pnp nomination?
+                    </div>
+                    <div class="buttons-area">
+                        <input type="radio" name="pnp-nomination" id="pnp-nomination-no" value="pnp-nomination-no"
+                            >
+                        <label for="pnp-nomination-no">No</label>
+
+                        <input type="radio" name="pnp-nomination" value="pnp-nomination-yes" id="pnp-nomination-yes">
+                        <label for="pnp-nomination-yes">Yes</label>
                     </div>
                 </div>
             </div>

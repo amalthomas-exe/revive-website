@@ -17,9 +17,9 @@
 }
 
 .section-title{
-    font-size: 1.5em;
+    font-size: 1.2em;
+    margin-top: 1.2em;
 }
-
 
 input[type="radio"]{
   display: none;
@@ -34,7 +34,7 @@ label{
   cursor: pointer;
   border: 2px solid #334961;  
   border-radius: 5px;
-  padding: 10px 5px;
+  padding: 10px;
   display: flex;
   align-items: center;
   margin-right: 20px;
@@ -42,4 +42,22 @@ label{
 input[type="radio"]:checked + label{
   background-color: #334961;
   color: white;
+}
+
+#age-input{
+  width: 100%;
+  margin-top: 10px;
+  border: 2px solid #334961;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1em;
+  color: #334961;
+}
+
+.hidden{
+  display: none;
+}
+
+.visible{
+  display: block;
 }
