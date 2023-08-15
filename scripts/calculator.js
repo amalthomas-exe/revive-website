@@ -3,7 +3,7 @@ let score = 0;
  const maritalRadioInputs = document.querySelectorAll('input[type=radio][name="marital"]')
  maritalRadioInputs.forEach(input => {
      input.addEventListener('change', function() {
-         if (this.value === 'married') {
+         if (this.value === 'married' || this.value === 'common-law') {
              document.getElementById('marital-accompanying').style.display = 'block';
          }
          else{

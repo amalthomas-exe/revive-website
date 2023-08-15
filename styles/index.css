@@ -150,43 +150,6 @@ body{
     justify-content: space-between;
 }
 
-.service-box{
-    width: 30%;
-    height: 460px;
-    border-radius: 43px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#box-filter{
-    width: 100%;
-    height: 100%;
-    border-radius: 43px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: grayscale(60%) ;    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: backdrop-filter 0.5s ease-in-out;
-}
-
-#box-filter:hover{
-    backdrop-filter: grayscale(0%) ;
-    cursor: pointer;
-}
-
-.box-text{
-    font-size: 1.5em;
-    color: rgb(255, 255, 255);
-    margin: 0;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    margin-top: 100%;
-}
-
 #box-1{
     background: url(../assets/box-1.jpg) center center no-repeat;
 }
@@ -213,6 +176,66 @@ body{
     aspect-ratio: 1/1;
     background: url(../assets/why-canada.jpg) lightgray 50% / cover no-repeat;
 }
+
+
+.flip-card {
+    background-color: transparent;
+    width: 30%;
+    height: 400px;
+    perspective: 1000px;
+    border-radius: 15px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 15px;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 15px;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #FF9945;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .box-card-text{
+    width: 100%;
+    height: 100%;
+    font-size: 1.5em;
+    color: rgb(243, 243, 243);
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    height: 100%;
+    backdrop-filter: grayscale(60%) blur(5px);    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
 #why-canada-text{
     width: 60%;
@@ -604,13 +627,9 @@ a{
         flex-direction: column;
     }
 
-    .service-box{
+    .flip-card{
         width: 100%;
         margin-bottom: 3em;
-    }
-
-    #box-filter{
-        padding: 2em;
     }
 
     #sub-section{
