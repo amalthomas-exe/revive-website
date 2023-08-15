@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Niconne&family=Lora&family=Montserrat&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Lora&family=Merriweather&family=Montserrat&family=Niconne&family=Roboto&display=swap');
 body{
     margin: 0;
     padding: 0;
@@ -393,6 +392,115 @@ a{
     color: white;
 }
 
+#testimonial_area{
+    padding:2em;
+    background-color: #F5F5F5;
+}
+
+.box-area{
+    padding: 20px;
+    position: relative;
+    display: block;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px #6EAFF6;
+    transition: 0.5s;
+    margin: 20px 0;
+    font-family: 'Merriweather', serif;
+    opacity: 0.8;
+    color: #334961;
+    height: fit-content;
+}
+
+.box-area > .content , .box-area > .name{
+    font-size: 15px;
+}
+
+.owl-item.active.center > .box-area{
+    box-shadow: 0px 4px 20px #292929;
+    background-color: #334961;
+    opacity: 1;
+    color: #D9D9D9;
+}
+
+.owl-item.active.center > .box-area > .content{
+    font-size: 18px;
+}
+
+.owl-item.active.center > .box-area > .location{
+    color: #D9D9D9;
+}
+
+.quote-area{
+    color: #FF9945;
+    width: inherit;
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+    font-size: 96px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 90.5px; /* 94.271% */
+}
+
+.name{
+    margin-top: 1em;
+    font-size: 1.5em;
+    color: #FF9945;
+}
+
+.location{
+    color:#334961;
+}
+
+#testimonial_area .owl-nav{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+#testimonial_area .owl-prev,
+#testimonial_area .owl-next
+{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: blue;
+    border-radius: 50%;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+}
+
+#testimonial_area .owl-prev{
+    left:-60px;
+    top:-30px;
+}
+
+#testimonial_area .owl-next{
+    right:-60px;
+    top:-30px
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #D9D9D9;
+    margin: 10px;
+}
+
+.dot.active{
+    background-color: #334961;
+}
+
+.dots-container{
+    align-items: center;
+    justify-content: center;
+
+}
+
 @media(max-width:550px){
     #why-canada{
         flex-direction: column;
@@ -511,3 +619,5 @@ a{
         border-radius: 20px;
     }
 }
+
+
